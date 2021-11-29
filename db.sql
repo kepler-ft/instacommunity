@@ -7,8 +7,8 @@ CREATE TABLE communities(id SERIAL PRIMARY KEY,
     name VARCHAR NOT NULL,
     description TEXT NOT NULL,
     contact VARCHAR(200) NOT NULL,
-    contact2 VARCHAR(200) DEFAULTS TO '',
-    contact3 VARCHAR(200) DEFAULTS TO ''
+    contact2 VARCHAR(200) DEFAULT '',
+    contact3 VARCHAR(200) DEFAULT ''
 );
 
 CREATE TABLE users_communities(
