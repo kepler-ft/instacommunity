@@ -1,0 +1,6 @@
+[submodule "instacommunity-front"]
+	path = instacommunity-front
+	url = https://github.com/kepler-ft/instacommunity-front.git
+[submodule "instacommunity-back"]
+	path = instacommunity-back
+	url = https://github.com/kepler-ft/instacommunity-back.git
