@@ -5,7 +5,7 @@ services:
     container_name: ic-backend
     build: ./instacommunity-back/
     ports:
-      - 8080:8080
+      - "8080:8080"
     links:
       - ic-postgres
     env_file:
@@ -15,13 +15,13 @@ services:
     container_name: ic-frontend
     build: ./instacommunity-front/
     ports:
-      - 3000:3000
+      - "3000:3000"
     links:
       - ic-backend
 
   ic-postgres:
     ports:
-      - 5432:5432
+      - "5432:5432"
     image: 'postgres:alpine'
     container_name: ic-postgres
     env_file:
