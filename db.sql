@@ -3,7 +3,8 @@ CREATE TABLE users(
     name VARCHAR NOT NULL
 );
 
-CREATE TABLE communities(id SERIAL PRIMARY KEY,
+CREATE TABLE communities(
+    id SERIAL PRIMARY KEY,
     name VARCHAR NOT NULL,
     description TEXT NOT NULL,
     contact VARCHAR(200) NOT NULL,

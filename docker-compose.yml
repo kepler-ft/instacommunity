@@ -2,6 +2,8 @@ version: "3.8"
 
 services:
   ic-backend:
+    depends_on:
+      - ic-postgres
     container_name: ic-backend
     build: ./instacommunity-back/
     ports:
@@ -12,6 +14,8 @@ services:
       - ./env.env
 
   ic-frontend:
+    depends_on:
+      - ic-backend
     container_name: ic-frontend
     build: ./instacommunity-front/
     ports:
