@@ -15,7 +15,9 @@ and fun way 🤩
 
 ```git clone https://github.com/kepler-ft/instacommunity.git & cd instacommunity```
 
-- Add the environment variables of your application to access the database:
+- Register the project in Google's Firebase, and download the .json credentials
+- Add the environment variables of your application to access the database,
+as well as the path to yours Firebase's credentials:
 
 ```shell
 echo "POSTGRES_PASSWORD=ic-postgres
@@ -25,8 +27,10 @@ DB_SERVER=ic-postgres
 DB_NAME=ic-postgres
 DB_USER=ic-postgres
 DB_PASSWORD=ic-postgres
-host=localhost" >> env.env
+host=localhost"
+GOOGLE_APPLICATION_CREDENTIALS=/home/<user>/Downloads/service-account-file.json >> env.env
 ```
+
 
 - Where ```DB_NAME``` will be the Name of the database your application will store it's data.
 - ```DB_USER``` will be the name by which you might access the database with ```DB_PASSWORD```
